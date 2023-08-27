@@ -1,0 +1,83 @@
+@charset "ISO-8859-1";
+
+.admin .card :hover {
+	background: #e2e2e2;
+	cursor: pointer;
+}
+
+.list-group-item.active {
+	background: #75e900;;
+	border-color: #75e900;
+	color: black;
+	border-color: #75e900;
+}
+
+.custom-bg {
+	background: #75e900 !important;
+}
+
+.category-list .category:hover {
+	background: #c0c0c0 !important;
+	color: black;
+}
+
+.card .discount-label {
+	font-size: 10px !important;
+	font-style: italic !important;
+	text-decoration: line-through !important;
+}
+
+.discount-label:hover {
+	color: white;
+}
+
+.card-horizontal{
+	display: flex;
+    flex: 1 1 auto;
+}
+
+/*toast*/
+#toast {
+	min-width: 300px;
+	position: fixed;
+	bottom: 30px;
+	left: 500px;
+	
+	background: #75e900!important;
+	padding: 5px;
+	color: black;
+	text-align: center;;
+	z-index: 1;
+	font-size: 15px;
+	visibility:hidden;
+	border-radius: 10px;
+}
+
+#toast.display{
+	visibility: visible;
+	animation: fadein 0.5s,fadeout 0.5s 2.5s;
+}
+@keyframes fadein {from { bottom:0;
+	opacity: 0;
+}
+
+to {
+	bottom: 30px;
+	opacity: 1;
+}
+
+}
+@keyframes fadeout {
+	from{
+	bottom: 30px;
+	opacity: 1;
+	}
+	to{
+	bottom:0;
+	opacity: 0;
+	}
+}
+
+.card-body .productinfo{
+	text-decoration: none;
+}
